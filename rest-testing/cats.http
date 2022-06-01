@@ -1,0 +1,33 @@
+### open in vscode + httpClient plugin
+@baseUrl = http://localhost:3000/cats
+
+### Get all cats
+GET {{baseUrl}}
+Accept: application/json
+
+### Get cat by ID
+GET {{baseUrl}}/123
+Accept: application/json
+
+### redirect to blog | TODO need fix
+GET {{baseUrl}}/gotoBlog
+Accept: application/json
+
+### create CAT pass body | TODO need fix
+POST {{baseUrl}}/createCat
+Content-Type:  : application/json
+
+{
+"name": "Chetan",
+"age": 28,
+"breed": "human"
+}
+
+### update CAT pass body | TODO need fix
+PUT http://localhost:3000/cats/updateCat
+Accept: application/json
+
+### delete CAT by id | TODO need fix
+DELETE http://localhost:3000/cats/removeCat/123
+Accept: application/json
+
