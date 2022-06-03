@@ -1,11 +1,11 @@
-class Testimonials {
+export class Testimonials {
   constructor(
     public profession: Testimonial[],
     public community: Testimonial[],
   ) {}
 }
 
-class Testimonial {
+export class Testimonial {
   constructor(
     public id: string,
     public name: string,
@@ -33,7 +33,7 @@ enum InteractionEvent {
   Others,
 }
 
-class Interaction {
+export class Interaction {
   constructor(
     public id: string,
     public interactionUserId: string,
@@ -49,7 +49,7 @@ enum WellWisherRelation {
   ExCollege,
 }
 
-class WellWisher {
+export class WellWisher {
   constructor(
     public id: string,
     public name: string,

@@ -1,4 +1,4 @@
-class OpenSourceCommunity {
+export class OpenSourceCommunity {
   constructor(
     public sessionHosted: SessionHosted[],
     public sessionConducted: SessionDetails[],
@@ -14,7 +14,7 @@ enum OpenSourceProjectStatus {
   Archived,
 }
 
-class OpenSourceProjects {
+export class OpenSourceProjects {
   constructor(
     public id: string,
     public name: string,
@@ -29,7 +29,7 @@ class OpenSourceProjects {
   ) {}
 }
 
-class MenteeProfile {
+export class MenteeProfile {
   constructor(
     public id: string,
     public name: string,
@@ -56,7 +56,7 @@ enum OpenSourceContributionStatus {
   Rejected,
 }
 
-class GithubContribution {
+export class GithubContribution {
   constructor(
     public id: string,
     public title: string,
@@ -72,7 +72,7 @@ class GithubContribution {
   ) {}
 }
 
-class ProjectDetails {
+export class ProjectDetails {
   constructor(
     public name: string,
     public url: string,
@@ -82,7 +82,7 @@ class ProjectDetails {
   ) {}
 }
 
-class MaintainerProfile {
+export class MaintainerProfile {
   constructor(
     public name: string,
     public avatarUrl: string,
@@ -91,7 +91,7 @@ class MaintainerProfile {
   ) {}
 }
 
-class SessionDetails {
+export class SessionDetails {
   constructor(
     public id: string,
     public name: string,
@@ -105,7 +105,7 @@ class SessionDetails {
   ) {}
 }
 
-class SessionHosted {
+export class SessionHosted {
   constructor(
     public id: string,
     public sessionDetails: SessionDetails,
@@ -113,7 +113,7 @@ class SessionHosted {
   ) {}
 }
 
-class SessionSpeaker {
+export class SessionSpeaker {
   constructor(
     public speakerName: string,
     public speakerProfile: string,

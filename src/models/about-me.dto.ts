@@ -1,16 +1,16 @@
-class Resume {
+export class Resume {
   constructor(public driveUrl: string, public updatedAt: number) {}
 }
 
-class Highlights {
+export class Highlights {
   constructor(public highlights: string[]) {}
 }
 
-class Contact {
+export class Contact {
   constructor(public email: string, public telegram: string) {}
 }
 
-class Social {
+export class Social {
   constructor(
     public twitter: string,
     public github: string,
@@ -21,7 +21,7 @@ class Social {
   ) {}
 }
 
-class Blogs {
+export class Blogs {
   constructor(
     public personal: string,
     public medium: string,
@@ -30,7 +30,7 @@ class Blogs {
   ) {}
 }
 
-class Qualification {
+export class Qualification {
   constructor(
     public midSchoolDriveUrl: Certificate,
     public highSchoolDriveUrl: Certificate,
@@ -39,7 +39,7 @@ class Qualification {
   ) {}
 }
 
-class Certificate {
+export class Certificate {
   constructor(
     public id: string,
     public title: string,
@@ -60,7 +60,7 @@ enum AwardType {
   Hackathon,
 }
 
-class Awards {
+export class Awards {
   constructor(
     public id: string,
     public title: string,

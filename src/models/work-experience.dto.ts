@@ -1,4 +1,4 @@
-class WorkExperience {
+export class WorkExperience {
   constructor(
     public fullTime: WorkDetails[],
     public consultant: WorkDetails[],
@@ -6,7 +6,7 @@ class WorkExperience {
   ) {}
 }
 
-class WorkDetails {
+export class WorkDetails {
   constructor(
     public designation: string,
     public employmentStart: number,
@@ -23,7 +23,7 @@ class WorkDetails {
   ) {}
 }
 
-class Company {
+export class Company {
   constructor(
     public name: string,
     public location: string,
@@ -32,7 +32,7 @@ class Company {
   ) {}
 }
 
-class CompanyProject {
+export class CompanyProject {
   constructor(
     public name: string,
     public about: string,
@@ -42,11 +42,11 @@ class CompanyProject {
   ) {}
 }
 
-class CompanyTestimonials {
+export class CompanyTestimonials {
   constructor(public message: string, public profile: CollegeProfile) {}
 }
 
-class CollegeProfile {
+export class CollegeProfile {
   constructor(
     public name: string,
     public avatarUrl: string,
@@ -55,7 +55,7 @@ class CollegeProfile {
   ) {}
 }
 
-class CompanyAward {
+export class CompanyAward {
   constructor(
     public name: string,
     public awardProofUrl: string,
